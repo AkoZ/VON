@@ -1,41 +1,4 @@
-# Visual Object Networks
-
-
-<img src='imgs/teaser.jpg' width=820>
-
-[Project Page](http://von.csail.mit.edu) |  [Paper](http://arxiv.org/abs/1812.02725)
-
-We present Visual Object Networks (VON), an end-to-end adversarial learning framework that jointly models 3D shapes and 2D images.  Our model can synthesize a 3D shape, its intermediate 2.5D depth representation, and a 2D image all at once. The VON not only generates realistic images but also enables several 3D operations.
-
-
-
-Visual Object Networks: Image Generation with Disentangled 3D Representation.<br/>
-[Jun-Yan Zhu](http://people.csail.mit.edu/junyanz/),
- [Zhoutong Zhang](https://www.csail.mit.edu/person/zhoutong-zhang), [Chengkai Zhang](https://scholar.google.com/citations?user=rChGGwgAAAAJ&hl=en), [Jiajun Wu](https://jiajunwu.com/), [Antonio Torralba](http://web.mit.edu/torralba/www/), [    Joshua B. Tenenbaum](http://web.mit.edu/cocosci/josh.html), [William T. Freeman](http://billf.mit.edu/).<br/>
-MIT CSAIL and Google Research.<br/>
-In NeurIPS 2018.
-
-## Example results
-(a) Typical examples produced by a recent GAN model [Gulrajani et al., 2017].<br/>
-(b) Our model produces three outputs: a 3D shape, its 2.5D projection given a viewpoint, and a final image with realistic texture.<br/>
-(c) Our model allows several 3D applications including editing viewpoint, shape, or texture independently.
-
-<img src='imgs/overview.jpg' width=800>
-
-## More samples
-Below we show more samples from DCGAN [Radford et al., 2016], LSGAN [Mao et al., 2017], WGAN-GP [Gulrajani et al., 2017], and our VON. For our method, we show both 3D shapes and 2D images. The learned 3D prior helps produce better samples.
-
-<img src='imgs/samples.jpg' width=820>
-
-## 3D object manipulations
-Our VON allows several 3D applications such as (left) changing the viewpoint, texture, or shape independently, and (right) interpolating between two objects in shape space, texture space, or both.
-
-<img src='imgs/app.jpg' width=820>
-
-## Transfer texture across objects and viewpoints
-VON can transfer the texture of a real image to different shapes and viewpoints
-
-<img src='imgs/transfer.jpg' width=820>
+# Visual Object Networks - changed to be practical and have the ways to put it on windows10
 
 ## Prerequisites
 - Linux (only tested on Ubuntu 16.04)
@@ -121,6 +84,43 @@ bash ./scripts/train_full.sh 0 car df 0
 ```
 
 - To view training results and loss plots, go to http://localhost:8097 in a web browser. To see more intermediate results, check out  `./checkpoints/*/web/index.html`
+
+<img src='imgs/teaser.jpg' width=820>
+
+[Project Page](http://von.csail.mit.edu) |  [Paper](http://arxiv.org/abs/1812.02725)
+
+We present Visual Object Networks (VON), an end-to-end adversarial learning framework that jointly models 3D shapes and 2D images.  Our model can synthesize a 3D shape, its intermediate 2.5D depth representation, and a 2D image all at once. The VON not only generates realistic images but also enables several 3D operations.
+
+
+
+Visual Object Networks: Image Generation with Disentangled 3D Representation.<br/>
+[Jun-Yan Zhu](http://people.csail.mit.edu/junyanz/),
+ [Zhoutong Zhang](https://www.csail.mit.edu/person/zhoutong-zhang), [Chengkai Zhang](https://scholar.google.com/citations?user=rChGGwgAAAAJ&hl=en), [Jiajun Wu](https://jiajunwu.com/), [Antonio Torralba](http://web.mit.edu/torralba/www/), [    Joshua B. Tenenbaum](http://web.mit.edu/cocosci/josh.html), [William T. Freeman](http://billf.mit.edu/).<br/>
+MIT CSAIL and Google Research.<br/>
+In NeurIPS 2018.
+
+## Example results
+(a) Typical examples produced by a recent GAN model [Gulrajani et al., 2017].<br/>
+(b) Our model produces three outputs: a 3D shape, its 2.5D projection given a viewpoint, and a final image with realistic texture.<br/>
+(c) Our model allows several 3D applications including editing viewpoint, shape, or texture independently.
+
+<img src='imgs/overview.jpg' width=800>
+
+## More samples
+Below we show more samples from DCGAN [Radford et al., 2016], LSGAN [Mao et al., 2017], WGAN-GP [Gulrajani et al., 2017], and our VON. For our method, we show both 3D shapes and 2D images. The learned 3D prior helps produce better samples.
+
+<img src='imgs/samples.jpg' width=820>
+
+## 3D object manipulations
+Our VON allows several 3D applications such as (left) changing the viewpoint, texture, or shape independently, and (right) interpolating between two objects in shape space, texture space, or both.
+
+<img src='imgs/app.jpg' width=820>
+
+## Transfer texture across objects and viewpoints
+VON can transfer the texture of a real image to different shapes and viewpoints
+
+<img src='imgs/transfer.jpg' width=820>
+
 
 
 ### Citation
